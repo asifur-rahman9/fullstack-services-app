@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../html/admin-dashboard.html">Dashboard</a></li> 
+                <li><a href="../html/admin-manage-services.html">Manage Services</a></li> 
+                <li><a href="../html/admin-billing.html">Manage Billing</a></li> 
+                <li><a href="../html/admin-edit-info.html">Business Information</a></li> 
+                <li><a href="../html/admin-logout.html">Logout</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="admin-overview">
+            <h2>Welcome, [Admin Name]</h2>
+            <p>Manage your services and business information from this dashboard.</p>
+        </section>
+
+        <section class="metrics-section">
+            <div class="metrics-container">
+                <div class="metric-item">
+                    <h3>Pending Requests</h3>
+                    <p><strong>0</strong> requests awaiting action</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Upcoming Services</h3>
+                    <p><strong>0</strong> services scheduled this week</p>
+                </div>
+                <div class="metric-item">
+                    <h3>Unpaid Bills</h3>
+                    <p>Total: <strong>0</strong></p>
+                </div>
+                <div class="metric-item">
+                    <h3>Total Services</h3>
+                    <p><strong>0</strong> services provided this month</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Service Management System. All rights reserved.</p>
+    </footer>
+    <script src="../js/admin-dashboard.js"></script>
+</body>
+</html>

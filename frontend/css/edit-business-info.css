@@ -1,0 +1,128 @@
+.business-info-container {
+    max-width: 600px; 
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.business-info-container h2 {
+    font-size: 28px;
+    color: #005b8f;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #005b8f;
+    padding-bottom: 10px;
+}
+
+.business-info-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.business-info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    text-align: left; 
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-group input[type="file"] {
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+.current-logo img {
+    max-width: 150px;
+    max-height: 150px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 4px;
+    display: block;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: auto; 
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.03);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .business-info-container {
+        padding: 15px;
+    }
+
+    .business-info-container h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Manage Services</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/customer-manage-appointments.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../html/customer-dashboard.html">Dashboard</a></li>
+                <li><a href="../html/customer-manage-appointments.html" class="active">Manage Appointments</a></li>
+                <li><a href="../html/customer-billing.html">Manage Billing</a></li>
+                <li><a href="../html/customer-edit-info.html">Account Settings</a></li>
+                <li><a href="../html/customer-logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="browse-services-section">
+            <h2>Browse Services</h2>
+            <p>Find and request services tailored to your needs.</p>
+            <a href="../html/customer-service-search.html">
+                <button class="button browse-service-button" id="browseServicesButton">+ Browse Services</button>
+            </a>
+        </section>
+
+        
+        <section class="pending-services-section">
+            <h2>Pending Appointments</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Description</span>
+                    <span>Provider</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                    <span>Actions</span>
+                </div>
+                <div id="pendingServices" class="table-body">
+                   
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="upcoming-services-section">
+            <h2>Upcoming Appointments</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Description</span>
+                    <span>Provider</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                    <span>Actions</span>
+                </div>
+                <div id="upcomingServices" class="table-body">
+                    
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="completed-services-section">
+            <h2>Completed Appointments</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Description</span>
+                    <span>Provider</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                </div>
+                <div id="completedServices" class="table-body">
+                   
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="cancelled-bookings-section">
+            <h2>Cancelled Appointments</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Description</span>
+                    <span>Provider</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                </div>
+                <div id="cancelledBookings" class="table-body">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <div id="editAppointmentModal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close-button" id="closeEditModalButton">&times;</span>
+          <h2>Edit Appointment</h2>
+          <form id="editAppointmentForm">
+            <label for="editAppointmentDate">Date:</label>
+            <input type="date" id="editAppointmentDate" required />
+      
+            <label for="editAppointmentTime">Time:</label>
+            <input type="time" id="editAppointmentTime" required />
+      
+            <div style="text-align: right;">
+              <button type="submit">Save Changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    <footer>
+        <p>&copy; 2024 Service Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/customer-manage-appointments.js"></script>
+</body>
+</html>

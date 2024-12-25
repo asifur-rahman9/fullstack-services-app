@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/client-dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../html/customer-dashboard.html">Dashboard</a></li>
+                <li><a href="../html/customer-manage-appointments.html" class="active">Manage Appointments</a></li>
+                <li><a href="../html/customer-billing.html">Manage Billing</a></li>
+                <li><a href="../html/customer-edit-info.html">Account Settings</a></li>
+                <li><a href="../html/customer-logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="client-overview">
+            <h2 id="welcomeMessage">Welcome, [Customer Name]</h2>
+            <p>Here is an overview of your requested services and upcoming bookings.</p>
+        </section>
+    
+        
+        <section class="metrics-section">
+            <div class="metric-item">
+                <h3>Total Services Requested</h3>
+                <p id="totalServices">0</p>
+            </div>
+            <div class="metric-item">
+                <h3>Upcoming Services</h3>
+                <p id="upcomingServices">0</p>
+            </div>
+            <div class="metric-item">
+                <h3>Cancelled Bookings</h3>
+                <p id="cancelledBookings">0</p>
+            </div>
+            <div class="metric-item">
+                <h3>Outstanding Payments</h3>
+                <p id="outstandingPayments">$0</p>
+            </div>
+        </section>
+    
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Service Management System. All rights reserved.</p>
+    </footer>
+    <script src="../js/customer-dashboard.js"></script>
+</body>
+</html>

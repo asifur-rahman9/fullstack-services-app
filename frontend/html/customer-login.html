@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login-form-container">
+            <h2 class="login-form-title">Login for Clients</h2>
+            <form id="clientLoginForm" class="login-form">
+                <div class="login-form-group">
+                    <label for="email" class="login-form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="login-form-input" required>
+                </div>
+        
+                <div class="login-form-group">
+                    <label for="password" class="login-form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="login-form-input" required>
+                </div>
+        
+                <div class="login-form-group login-form-remember">
+                    <label class="login-form-checkbox-label">
+                        <input type="checkbox" name="remember" class="login-form-checkbox"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="login-form-button">Login</button>
+        
+                <div class="login-form-footer">
+                    <p class="login-form-text">Don't have an account?</p>
+                    <a href="../html/customer-signup.html" class="login-form-link">Sign up!</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Service Management System. All rights reserved.</p>
+    </footer>
+    <script src="../js/login.js"></script>
+    
+
+</body>
+</html>

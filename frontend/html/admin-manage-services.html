@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Manage Services</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin-manage-services.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../html/admin-dashboard.html">Dashboard</a></li>
+                <li><a href="../html/admin-manage-services.html">Manage Services</a></li>
+                <li><a href="../html/admin-billing.html">Manage Billing</a></li>
+                <li><a href="../html/admin-edit-info.html">Business Information</a></li>
+                <li><a href="../html/admin-logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="add-service-section">
+            <h2>Manage Services</h2>
+            <p>View, add, edit, or delete services offered by your business.</p>
+            <button class="button add-service-button" id="openModalButton">+ Add New Service</button>
+        </section>
+
+      
+        <section class="existing-services-section">
+            <h2>Offered Services</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Name</span>
+                    <span>Description</span>
+                    <span>Price</span>
+                    <span>Category</span>
+                    <span>Actions</span>
+                </div>
+                <div id="servicesList" class="table-rows">
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="pending-requests-section">
+            <h2>Pending Service Requests</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Customer</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                    <span>Actions</span>
+                </div>
+                <div id="pendingRequestsList" class="table-rows">
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="upcoming-services-section">
+            <h2>Ongoing Services</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Customer</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                    <span>Actions</span>
+                </div>
+                <div id="upcomingServicesList" class="table-rows">
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="completed-services-section">
+            <h2>Completed Services</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Customer</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                </div>
+                <div id="completedServicesList" class="table-rows">
+                    
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="cancelled-services-section">
+            <h2>Cancelled Service Requests</h2>
+            <div class="table-container">
+                <div class="table-header">
+                    <span>Service</span>
+                    <span>Customer</span>
+                    <span>Date</span>
+                    <span>Time</span>
+                </div>
+                <div id="cancelledServicesList" class="table-rows">
+                   
+                </div>
+            </div>
+        </section>
+
+       
+        <div class="modal" id="addServiceModal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModalButton">&times;</span>
+                <h2>Add New Service</h2>
+                <form id="addServiceForm">
+                    <label for="serviceName">Service Name:</label>
+                    <input type="text" id="serviceName" class="form-input" required>
+
+                    <label for="serviceDescription">Description:</label>
+                    <textarea id="serviceDescription" class="form-input" required></textarea>
+
+                    <label for="servicePrice">Price:</label>
+                    <input type="number" id="servicePrice" class="form-input" required>
+
+                    <label for="serviceCategory">Category:</label>
+                    <input type="text" id="serviceCategory" class="form-input" required>
+
+                    <button type="submit" class="button save-button">Save</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="modal" id="editServiceModal">
+            <div class="modal-content">
+                <span class="close-button" id="closeEditModalButton">&times;</span>
+                <h2>Edit Service</h2>
+                <form id="editServiceForm">
+                    <label for="editServiceName">Service Name:</label>
+                    <input type="text" id="editServiceName" class="form-input" required>
+
+                    <label for="editServiceDescription">Description:</label>
+                    <textarea id="editServiceDescription" class="form-input" required></textarea>
+
+                    <label for="editServicePrice">Price:</label>
+                    <input type="number" id="editServicePrice" class="form-input" required>
+
+                    <label for="editServiceCategory">Category:</label>
+                    <input type="text" id="editServiceCategory" class="form-input" required>
+
+                    <button type="submit" class="button save-button">Update</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Service Management System. All rights reserved.</p>
+    </footer>
+    <script src="../js/admin-manage-services.js"></script>
+</body>
+</html>

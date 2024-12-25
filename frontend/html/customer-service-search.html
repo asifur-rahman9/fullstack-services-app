@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Search</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/customer-service-search.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <header>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../html/customer-dashboard.html">Dashboard</a></li>
+                        <li><a href="../html/customer-manage-appointments.html" class="active">Manage Appointments</a></li>
+                        <li><a href="../html/customer-billing.html">Manage Billing</a></li>
+                        <li><a href="../html/customer-edit-info.html">Account Settings</a></li>
+                        <li><a href="../html/customer-logout.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <div class="search-container">
+                <input type="text" id="serviceSearch" placeholder="Search for services..." onkeyup="filterServices()">
+            </div>
+            
+            <div class="service_search" id="servicesContainer">
+               
+            </div>
+            
+            
+            <div id="appointmentModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal" id="closeAppointmentModal">&times;</span>
+                    <h2 id="appointmentFormTitle">Book an Appointment</h2>
+                    <form id="appointmentForm">
+                        <label for="appointmentDate">Select Date:</label>
+                        <input type="date" id="appointmentDate" required>
+                        
+                        <label for="appointmentTime">Select Time:</label>
+                        <input type="time" id="appointmentTime" required>
+                        
+                        <button type="submit" id="confirmAppointment">Confirm Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <footer id="footer">
+        <p>&copy; 2024 Service Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/customer-service-search.js"></script>
+</body>
+</html>

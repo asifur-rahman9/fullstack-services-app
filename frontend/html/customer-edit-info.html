@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Account</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/edit-business-info.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../html/customer-dashboard.html">Dashboard</a></li>
+                <li><a href="../html/customer-manage-appointments.html" class="active">Manage Appointments</a></li>
+                <li><a href="../html/customer-billing.html">Manage Billing</a></li>
+                <li><a href="../html/customer-edit-info.html">Account Settings</a></li>
+                <li><a href="../html/customer-logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="account-info-container">
+        <h2>Edit Your Account Information</h2>
+        <p>Update your personal information below.</p>
+        <div>
+        <form action="submit" method="POST" class="account-info-form">
+            <div class="form-group">
+                <label for="customer-name">Name:</label>
+                <input type="text" id="customer-name" name="customer-name" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="customer-email">Email:</label>
+                <input type="email" id="customer-email" name="customer-email" placeholder="johndoe@example.com" required>
+            </div>
+    
+            <div class="form-group"> 
+                <label for="customer-password">Password:</label>
+                <input type="password" id="customer-password" name="customer-password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="customer-address">Address:</label>
+                <textarea id="customer-address" name="customer-address" rows="3" placeholder="1234 Elm Street, Springfield"></textarea>
+            </div>
+            <a href="../html/customer-dashboard.html">
+            <button type="submit" class="btn">Update Account Info</button>
+        </a>
+        </form>
+    </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Service Manager. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/edit-customer-info.js"></script>
+
+</body>
+</html>

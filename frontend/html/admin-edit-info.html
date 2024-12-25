@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Business Info</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/edit-business-info.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../html/admin-dashboard.html">Dashboard</a></li> 
+                <li><a href="../html/admin-manage-services.html">Manage Services</a></li> 
+                <li><a href="../html/admin-billing.html">Manage Billing</a></li> 
+                <li><a href="../html/admin-edit-info.html">Business Information</a></li> 
+                <li><a href="../html/admin-logout.html">Logout</a></li> 
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="business-info-container">
+        <h2>Edit Business Information</h2>
+        <p>Update your business name, logo, and services offered below.</p>
+
+       
+        <form action="#" method="POST" enctype="multipart/form-data" class="business-info-form">
+           
+            <div class="form-group">
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business-name" placeholder="Your Business Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="new-email">New Email:</label>
+                <input type="email" id="new-email" name="new-email" placeholder="Enter New Email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Enter New Password" required>
+            </div>
+
+            
+            <button type="submit" class="btn">Update Business Info</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Service Manager. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/edit-business-info.js"></script>
+</body>
+</html>
